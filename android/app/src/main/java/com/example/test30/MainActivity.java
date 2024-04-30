@@ -1,4 +1,4 @@
-package com.example.jj;
+package com.example.test30;
 
 import io.flutter.embedding.android.FlutterActivity;
 

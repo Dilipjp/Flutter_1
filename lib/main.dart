@@ -84,13 +84,22 @@ class MyFirstFlutter extends StatelessWidget {
             ),
           ),
           SizedBox(height: 20,),
-          Row(
-            children: [
-              Image.asset('teacher.jpg', width: 200, height: 200,),
-              SizedBox(width: 20,),
-              Image.asset('teacher.jpg', width: 200, height: 200,),
-            ],
+          InkWell(
+            onTap: () {
+              ScaffoldMessenger.of(context)
+                  .showSnackBar(SnackBar(content: Text('you just click second')));
+
+            },
+            child: Image.asset('teacher.jpg', width: 200, height: 200,),
           ),
+
+          // Row(
+          //   children: [
+          //     Image.asset('teacher.jpg', width: 200, height: 200,),
+          //     SizedBox(width: 20,),
+          //     Image.asset('teacher.jpg', width: 200, height: 200,),
+          //   ],
+          // ),
 
 
         ],
